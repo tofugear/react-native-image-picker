@@ -751,6 +751,5 @@ public class ImagePickerModule extends ReactContextBaseJavaModule {
   }
 
   // Required for RN 0.30+ modules than implement ActivityEventListener
-  @Override
   public void onNewIntent(Intent intent) { }
 }
