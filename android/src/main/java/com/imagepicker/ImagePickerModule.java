@@ -208,6 +208,8 @@ public class ImagePickerModule extends ReactContextBaseJavaModule {
     }
 
     if (!permissionsCheck(currentActivity)) {
+      response.putString("error", "permission denied");
+      callback.invoke(response);
       return;
     }
 
@@ -263,6 +265,8 @@ public class ImagePickerModule extends ReactContextBaseJavaModule {
     }
 
     if (!permissionsCheck(currentActivity)) {
+      response.putString("error", "permission denied");
+      callback.invoke(response);
       return;
     }
 
